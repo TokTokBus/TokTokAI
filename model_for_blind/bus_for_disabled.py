@@ -373,6 +373,7 @@ for chars in plate_chars:
             unique_plate_chars.add(chars)
             additional_message = " 번 버스가 전방에 들어오고 있으니 조심해서 승차하세요."
             full_message = chars + " " + additional_message
+            print(full_message)
 
             engine.setProperty('rate', 150)  # Speed of speech
             engine.say(full_message)
